@@ -23,14 +23,14 @@ steps:
     nugetConfigPath: 'nuget.config'
     feedsToUse: config
     arguments: '--interactive'
-    projects: 'src/$(SolutionPath).sln'
+    projects: '$(SolutionPath).sln'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet build'
   inputs:
     command: 'build'
     arguments: '--configuration $(BuildConfiguration)'
-    projects: 'src/$(SolutionPath).sln'
+    projects: '$(SolutionPath).sln'
     
 - task: DotNetCoreCLI@2
   displayName: "dotnet test"
@@ -46,7 +46,7 @@ steps:
   inputs:
     codeCoverageTool: 'Cobertura'
     summaryFileLocation: 'src/**/coverage.cobertura.xml'
-    pathToSources: 'src/$(SolutionPath)'
+    pathToSources: '$(SolutionPath)'
 
 - powershell: |
     choco install docfx -y
