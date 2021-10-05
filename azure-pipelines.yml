@@ -76,5 +76,13 @@ steps:
     git push origin gh-pages -q
   displayName: "Publish docs"  
 
-
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: 'GITHUB'
+    repositoryName: 'CodeGator/CG.Traveler'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
 
