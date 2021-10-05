@@ -1,8 +1,8 @@
 # CG.Traveler: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Traveler/_apis/build/status/CodeGator.CG.Traveler?branchName=main)](https://dev.azure.com/codegator/CG.Traveler/_build/latest?definitionId=25&branchName=main)
+[![Build Status](https://dev.azure.com/codegator/CG.Traveler/_apis/build/status/CodeGator.CG.Traveler?branchName=main)](https://dev.azure.com/codegator/CG.Traveler/_build/latest?definitionId=78&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Traveler/index.html)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Traveler/25)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Traveler/78)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Traveler/discussions)
 
 #### What does it do?
