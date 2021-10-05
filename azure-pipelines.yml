@@ -74,18 +74,7 @@ steps:
     git add -A
     git commit -m "CI Updates [skip ci]" -q
     git push origin gh-pages -q
-- task: GitHubRelease@1
-  inputs:
-    gitHubConnection: 'GITHUB'
-    repositoryName: 'CodeGator/CG.Traveler'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'userSpecifiedTag'
-    tag: $(currentVersionName)
-    title: 'Release $(currentVersionName)'
-    changeLogCompareToRelease: 'lastFullRelease'
-    changeLogType: 'commitBased'
-  displayName: "Publish docs"  
-
+- 
+- 
 
 
